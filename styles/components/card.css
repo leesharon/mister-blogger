@@ -1,0 +1,61 @@
+
+.main-content.main-layout {
+    border-inline-start: 1px solid var(--clr11);
+    border-inline-end: 1px solid var(--clr11);
+    border-bottom: 1px solid var(--clr11);
+}
+
+.main-content .card {
+    margin-bottom: 80px;
+}
+
+.main-content .card:first-child {
+    margin-top: 80px;
+}
+
+.main-content .card .card-img {
+    margin-inline-end: 20px;
+}
+
+.main-content .card .card-description {
+    margin-inline-start: 20px;
+}
+
+.main-content .card .card-title {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.main-content .card p {
+    padding-inline-end: 25px;
+    margin-bottom: 28px;
+}
+
+.main-content .card p:last-of-type {
+    margin-bottom: 60px;
+}
+
+.main-content .card .card-btn {
+    color: var(--clr12);
+    border: 2px solid #c2c2c2;
+    font-size: 1em;
+    padding: 9px 25px;
+    background-color: white;
+    border-radius: 40px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.main-content .card .card-btn:hover {
+    color: var(--clr6);
+    border-color: var(--clr6);
+}
+
+.main-content .card .card-btn-arrow {
+    display: none;
+}
+
+.main-content .card .card-btn:hover > .card-btn-arrow {
+    display: unset;
+}

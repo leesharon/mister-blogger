@@ -1,0 +1,41 @@
+.main-header {
+    background-color: var(--clr1);
+    min-height: 130px;
+}
+
+.main-header .header-layout {
+    justify-content: space-between;
+    width: 100%;
+    border-inline-end: #1e1e1e solid 1px;
+}
+
+.main-header .main-logo {
+    font-family: eurofurenceregular;
+    font-size: 2.5em;
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: -0.8px;
+}
+
+.main-header .main-logo .logo-span {
+    color: #58c93a;
+}
+
+.main-header .main-nav {
+    height: 100%;
+    padding-top: 55px;
+}
+
+.main-header a {
+    color: #ffffff;
+    height: 100%;
+    display: inline-block;
+    padding: 0 38.5px;
+    border-inline-start: #1e1e1e solid 1px;
+
+}
+
+.main-header a:hover {
+    color: #58c93a;
+    border-bottom: #58c93a 5px solid;
+}

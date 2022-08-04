@@ -1,0 +1,11 @@
+/* Lato */
+@font-face {
+    font-family: lato;
+    src: url('/fonts/Lato/Lato-Regular.ttf');
+}
+
+/* Eurofurenceregular */
+@font-face {
+    font-family: eurofurenceregular;
+    src: url('/fonts/eurofurence/eurof55.ttf');
+}
