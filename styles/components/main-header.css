@@ -1,6 +1,6 @@
 .main-header {
     background-color: var(--clr1);
-    min-height: 130px;
+    min-height: 90px;
 }
 
 .main-header .header-layout {
@@ -23,7 +23,7 @@
 
 .main-header .main-nav {
     height: 100%;
-    padding-top: 55px;
+    padding-top: 35px;
 }
 
 .main-header a {
