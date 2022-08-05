@@ -23,19 +23,21 @@
 
 .main-header .main-nav {
     height: 100%;
-    padding-top: 35px;
+}
+
+.main-header .main-nav li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main-header .main-nav li:hover a{
+    color: #58c93a;
 }
 
 .main-header a {
     color: #ffffff;
-    height: 100%;
     display: inline-block;
     padding: 0 38.5px;
-    border-inline-start: #1e1e1e solid 1px;
-
 }
 
-.main-header a:hover {
-    color: #58c93a;
-    border-bottom: #58c93a 5px solid;
-}

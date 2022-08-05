@@ -10,16 +10,20 @@
 </head>
 
 <body>
+    <div onclick="toggleMenu()" class="main-screen"></div>
     <!-- Main Header -->
     <header class="main-header flex">
         <div class="header-layout main-layout flex align-center">
             <div class="main-logo">Blogin<span class="logo-span">.</span></div>
-            <ul class="main-nav clean-list flex">
-                <li><a href="">Journal</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">Content</a></li>
-            </ul>
+            <nav class="main-nav flex align-center">
+                <ul class="main-nav clean-list">
+                    <li><a href="">Journal</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Work</a></li>
+                    <li><a href="">Content</a></li>
+                </ul>
+            </nav>
+            <button onclick="toggleMenu()" class="toggle-menu">☰</button>
         </div>
     </header>
 
@@ -98,6 +102,13 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-opened')
+            document.querySelector('.main-screen').classList.toggle('menu-opened')
+        }
+    </script>
 </body>
 
 </html>

@@ -8,9 +8,9 @@
 @import 'basic/helpers.css';
 
 /* COMPONENTS */
+@import 'components/main-screen.css';
 @import 'components/main-header.css';
 @import 'components/card.css';
-@import 'components/newsletter.css';
 @import 'components/secondary-nav.css';
 @import 'components/main-footer.css';
 
