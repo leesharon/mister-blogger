@@ -35,6 +35,8 @@
         background-color: var(--clr3);
         cursor: pointer;
         margin-inline-end: 10px;
+        border-color: var(--clr3);
+        color: black;
     }
 }
 
