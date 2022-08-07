@@ -13,7 +13,7 @@
 /* Font Awesome */
 @font-face {
     font-family: fa;
-    src: url('/fonts/font-awesome/fa-brands-400.ttf');
+    src: url('fonts/font-awesome/fa-brands-400.ttf');
 }
 
 .fa::before {
