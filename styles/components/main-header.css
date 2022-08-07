@@ -2,6 +2,8 @@
     background-color: var(--clr1);
     min-height: 90px;
     box-shadow: inset 0px -8px 0 0 #1d1d1d;
+    z-index: 40;
+    position: relative;
 }
 
 .main-header .header-layout {
@@ -34,5 +36,5 @@
     color: #ffffff;
     padding: 0 30px;
     height: 90px;
-    /* width: 90px; */
+    justify-content: center;
 }

@@ -8,7 +8,7 @@
 @import 'basic/helpers.css';
 
 /* COMPONENTS */
-@import 'components/main-screen.css';
+@import 'components/screens.css';
 @import 'components/main-header.css';
 @import 'components/card.css';
 @import 'components/secondary-nav.css';

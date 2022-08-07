@@ -2,13 +2,14 @@
     background-color: white;
     height: 102vh;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translate(-50%, -150%);
     transition: transform .6s ease-in-out;
     padding: 30px;
     font-size: 1.2em;
+    z-index: 500;
 }
 
 .close-modal-btn {
@@ -23,12 +24,12 @@
     cursor: pointer;
 }
 
-body.modal-opened .main-screen {
+body.modal-opened .modal-screen {
     display: block;
 }
 
 body.modal-opened .article-modal{
-    transform: translate(-50%);
+    transform: translate(-50%, 0%);
 }
 
 body.modal-opened {

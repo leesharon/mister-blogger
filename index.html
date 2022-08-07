@@ -10,8 +10,9 @@
 </head>
 
 <body>
-    <!-- Main Screen -->
-    <div onclick="toggleModal() ;toggleMenu()" class="main-screen"></div>
+    <!-- Main + Modal Screens -->
+    <div onclick="toggleMenu()" class="main-screen"></div>
+    <div onclick="toggleModal()" class="modal-screen"></div>
 
     <!-- Main Header -->
     <header class="main-header flex">
@@ -127,6 +128,7 @@
 
     <script>
         function toggleMenu() {
+            if (document.body.classList.contains('modal-opened')) return
             document.body.classList.toggle('menu-opened')
             document.querySelector('.main-screen').classList.toggle('menu-opened')
         }
