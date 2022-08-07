@@ -8,7 +8,7 @@
     background-color: #1D1D1D;
     z-index: 30;
     max-height: 0;
-    transition: max-height 1s ease-in-out;
+    transition: max-height .7s ease-in-out;
     overflow: hidden;
     justify-content: flex-end;
 }
@@ -26,6 +26,6 @@
     color: var(--clr6);
 }
 
-.main-nav .journal-dropdown.dropdown-opened {
+body.menu-opened .main-nav .journal-dropdown.dropdown-opened {
     max-height: 100%;
 }

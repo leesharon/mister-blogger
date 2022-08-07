@@ -124,6 +124,10 @@
         width: 50%;
     }
 
+    .main-nav .journal-dropdown.dropdown-opened {
+        max-height: 100%;
+    }
+
     .journal-dropdown {
         top: 130px;
     }
