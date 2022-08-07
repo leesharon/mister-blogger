@@ -7,6 +7,9 @@
 
 .main-content .card {
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .main-content .card:first-child {
@@ -21,10 +24,6 @@
 .main-content .card p {
     padding-inline-end: 7px;
     margin-bottom: 18px;
-}
-
-.main-content .card p:last-of-type {
-    margin-bottom: 30px;
 }
 
 .main-content .card .card-btn {

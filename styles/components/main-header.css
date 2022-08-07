@@ -21,6 +21,10 @@
     color: #58c93a;
 }
 
+.main-header .main-nav ul {
+    z-index: 20;
+}
+
 .main-header .main-nav li:hover a.menu-item {
     color: #58c93a;
     box-shadow: inset 0px -5px 0 0 #58c93a;
@@ -28,7 +32,7 @@
 
 .main-header a.menu-item {
     color: #ffffff;
-    padding: 0 38.5px;
+    padding: 0 30px;
     height: 90px;
-    width: 90px;
+    /* width: 90px; */
 }

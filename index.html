@@ -11,7 +11,7 @@
 
 <body>
     <!-- Main Screen -->
-    <div onclick="toggleMenu(); toggleModal()" class="main-screen"></div>
+    <div onclick="toggleModal() ;toggleMenu()" class="main-screen"></div>
 
     <!-- Main Header -->
     <header class="main-header flex">
@@ -132,6 +132,7 @@
         }
         
         function toggleModal() {
+            if (document.body.classList.contains('menu-opened')) return
             document.body.classList.toggle('modal-opened')
         }
         
