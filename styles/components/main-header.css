@@ -1,12 +1,12 @@
 .main-header {
     background-color: var(--clr1);
     min-height: 90px;
+    box-shadow: inset 0px -8px 0 0 #1d1d1d;
 }
 
 .main-header .header-layout {
     justify-content: space-between;
     width: 100%;
-    border-inline-end: #1e1e1e solid 1px;
 }
 
 .main-header .main-logo {
@@ -21,23 +21,14 @@
     color: #58c93a;
 }
 
-.main-header .main-nav {
-    height: 100%;
-}
-
-.main-header .main-nav li {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.main-header .main-nav li:hover a{
+.main-header .main-nav li:hover a.menu-item {
     color: #58c93a;
+    box-shadow: inset 0px -5px 0 0 #58c93a;
 }
 
-.main-header a {
+.main-header a.menu-item {
     color: #ffffff;
-    display: inline-block;
     padding: 0 38.5px;
+    height: 90px;
+    width: 90px;
 }
-

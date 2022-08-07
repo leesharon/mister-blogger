@@ -8,3 +8,11 @@
     border-left: 1px solid var(--clr9);
     border-inline-end: 1px solid var(--clr9);
 }
+
+.prev-page:hover {
+    color: var(--clr9);
+}
+
+.next-page:hover {
+    color: var(--clr9);
+}

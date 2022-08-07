@@ -1,0 +1,31 @@
+
+
+.journal-dropdown {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 173px;
+    background-color: #1D1D1D;
+    z-index: 30;
+    max-height: 0;
+    transition: max-height .5s;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+.journal-dropdown .dropdown-item {
+    width: 130px;
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.journal-dropdown .dropdown-item:hover {
+    color: var(--clr6);
+}
+
+.main-nav .journal-dropdown.dropdown-opened {
+    max-height: 100%;
+}

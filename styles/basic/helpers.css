@@ -20,6 +20,10 @@
     justify-content: center;
 }
 
+.flex.align-end {
+    align-items: flex-end;
+}
+
 .flex.flex-col {
     flex-direction: column;
 }

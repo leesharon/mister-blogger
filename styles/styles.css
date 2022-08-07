@@ -13,6 +13,8 @@
 @import 'components/card.css';
 @import 'components/secondary-nav.css';
 @import 'components/main-footer.css';
+@import 'components/modals.css';
+@import 'components/dropdown-menu.css';
 
 /* Media Queries */
 @import 'mq/mq.css';

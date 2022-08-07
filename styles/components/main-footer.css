@@ -28,18 +28,34 @@
     font-size: 0.812em;
     font-weight: 400;
     line-height: 1.25rem;
+    text-align: center;
 }
 
-.main-footer .media-links img.media-icon {
-    padding: 12px;
-    margin-left: 10px;
-    margin-right: 10px;
+.main-footer .media-icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     background-color: #e5e5e5;
+    cursor: pointer;
     height: 40px;
     width: 40px;
-    cursor: pointer;
+    margin-right: 10px;
 }
 
-.main-footer .media-links img.media-icon:hover {
-    background-color: #516fad;
+.main-footer .media-icon a.facebook:hover {
+   background-color: #516fad;
 }
+
+.main-footer .media-icon a.twitter:hover {
+   background-color: #0F9BFB;
+}
+
+.main-footer .media-icon a.behance:hover {
+   background-color: #000000;
+}
+
+.main-footer .media-icon a.dribble:hover {
+   background-color: #C0346A;
+}
+

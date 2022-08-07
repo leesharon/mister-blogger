@@ -13,10 +13,6 @@
     margin-top: 40px;
 }
 
-.main-content .card .card-img {
-    margin-inline-end: 20px;
-}
-
 .main-content .card .card-title {
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -40,17 +36,18 @@
     border-radius: 40px;
     font-weight: 700;
     cursor: pointer;
+    position: relative;
+    transition: padding .5s;
 }
 
 .main-content .card .card-btn:hover {
     color: var(--clr6);
     border-color: var(--clr6);
+    padding-inline-end: 2.5em;
 }
 
-.main-content .card .card-btn-arrow {
-    display: none;
-}
-
-.main-content .card .card-btn:hover > .card-btn-arrow {
-    display: unset;
+.main-content .card .card-btn:hover::after {
+    content: '→';
+    position: absolute;
+    right: 1em;
 }

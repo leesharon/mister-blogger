@@ -10,17 +10,26 @@
 </head>
 
 <body>
-    <div onclick="toggleMenu()" class="main-screen"></div>
+    <!-- Main Screen -->
+    <div onclick="toggleMenu(); toggleModal()" class="main-screen"></div>
+
     <!-- Main Header -->
     <header class="main-header flex">
         <div class="header-layout main-layout flex align-center">
             <div class="main-logo">Blogin<span class="logo-span">.</span></div>
             <nav class="main-nav flex align-center">
                 <ul class="main-nav clean-list">
-                    <li><a href="">Journal</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Work</a></li>
-                    <li><a href="">Content</a></li>
+                    <li><a onclick="toggleDropDown(event)" class="flex align-center menu-item journal" href="">Journal&nbsp;&nbsp;<i class="arrow down"></i></a>
+                        <div class="journal-dropdown">
+                            <a class="dropdown-item" href="">October 2016</a>
+                            <a class="dropdown-item" href="">January 2017</a>
+                            <a class="dropdown-item" href="">April 2017</a>
+                            <a class="dropdown-item" href="">July 2017</a>
+                        </div>
+                    </li>
+                    <li><a class="flex align-center menu-item" href="">About</a></li>
+                    <li><a class="flex align-center menu-item" href="">Work</a></li>
+                    <li><a class="flex align-center menu-item" href="">Content</a></li>
                 </ul>
             </nav>
             <button onclick="toggleMenu()" class="toggle-menu">☰</button>
@@ -42,7 +51,7 @@
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur...
                 </p>
-                <button class="card-btn">Continue Reading<span class="card-btn-arrow">&nbsp;&nbsp;&#8594</span></button>
+                <button onclick="toggleModal()" class="card-btn">Continue Reading</button>
             </div>
         </div>
 
@@ -58,7 +67,7 @@
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur...
                 </p>
-                <button class="card-btn">Continue Reading<span class="card-btn-arrow">&nbsp;&nbsp;&#8594</span></button>
+                <button onclick="toggleModal()" class="card-btn">Continue Reading</button>
             </div>
         </div>
 
@@ -74,7 +83,7 @@
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur...
                 </p>
-                <button class="card-btn">Continue Reading<span class="card-btn-arrow">&nbsp;&nbsp;&#8594</span></button>
+                <button onclick="toggleModal()" class="card-btn">Continue Reading</button>
             </div>
         </div>
     </main>
@@ -95,18 +104,40 @@
                 © 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com
             </span>
             <ul class="media-links clean-list flex">
-                <li class="media-icon"><img class="media-icon" src="img/facebook-icon.png"></a></li>
-                <li class="media-icon"><img class="media-icon" src="img/twitter-icon.png"></a></li>
-                <li class="media-icon"><img class="media-icon" src="img/be-icon.png"></a></li>
-                <li class="media-icon"><img class="media-icon" src="img/ball-icon.png"></a></li>
+                <li class="media-icon"><a class="fa facebook"></a></li>
+                <li class="media-icon"><a class="fa twitter"></a></li>
+                <li class="media-icon"><a class="fa behance"></a></li>
+                <li class="media-icon"><a class="fa dribble"></a></li>
             </ul>
         </div>
     </footer>
+
+    <!-- Article Modal -->
+    <div class="article-modal flex flex-col">
+        <h2 class="card-title">Duis aute irure dolor in
+            henderit in voluptate.</h2>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+            doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur...
+        </p>
+        <button onclick="toggleModal()" class="close-modal-btn flex justify-center">Close</button>
+    </div>
 
     <script>
         function toggleMenu() {
             document.body.classList.toggle('menu-opened')
             document.querySelector('.main-screen').classList.toggle('menu-opened')
+        }
+        
+        function toggleModal() {
+            document.body.classList.toggle('modal-opened')
+        }
+        
+        function toggleDropDown(ev) {
+            ev.preventDefault()
+            document.querySelector('.journal-dropdown').classList.toggle('dropdown-opened')
         }
     </script>
 </body>

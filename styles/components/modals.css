@@ -1,0 +1,36 @@
+.article-modal {
+    background-color: white;
+    height: 102vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    transition: transform .6s ease-in-out;
+    padding: 30px;
+    font-size: 1.2em;
+}
+
+.close-modal-btn {
+    margin-top: auto;
+    width: 40%;
+    padding: 10px 40px;
+    align-self: center;
+    background-color: var(--clr7);
+    text-transform: uppercase;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+body.modal-opened .main-screen {
+    display: block;
+}
+
+body.modal-opened .article-modal{
+    transform: translate(-50%);
+}
+
+body.modal-opened {
+    overflow: hidden;
+}
